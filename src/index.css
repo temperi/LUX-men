@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply bg-primary text-white font-inter;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  @apply font-montserrat text-white;
+}
+
+.category-card {
+  @apply relative overflow-hidden rounded-lg transition-transform duration-300 hover:scale-105;
+}
+
+.category-card img {
+  @apply w-full h-full object-cover transition-transform duration-300;
+}
+
+.category-card:hover img {
+  @apply scale-110;
+}
+
+.social-icon {
+  @apply text-white/80 hover:text-white transition-colors duration-200;
+}
+
+input {
+  @apply text-white placeholder:text-white/60;
+}
+
+label {
+  @apply text-white;
+}
+
+a {
+  @apply text-white hover:text-white/80 transition-colors;
+}
+
+button {
+  @apply text-white;
+}
